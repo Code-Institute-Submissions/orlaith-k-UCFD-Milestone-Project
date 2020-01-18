@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Raleway:100,200,300,400,500,600,700,800,900|Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
+
+
+/* ---------------------------------------------- Colours */
+
+#portfolio-section {
+    background-color: #e3e3e3;
+}
+
+/* ---------------------------------------------- Custom Shared Styles */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------- Header */
+
+.cont-head {
+    text-align: center;
+}
+
+.head-name {
+
+    padding-top: 15%;
+    margin-bottom: -10%;
+    display: inline-block;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    font-family: "Caveat", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 4em;
+    color: #5a5a5a;
+}
+
+.callout h5 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+
+
+/* ------------------------------------------------ Nav */
+
+.nav-div {
+    overflow: hidden;
+}
+
+.nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 80px;
+}
+
+#nav {
+    margin-left: 35%;
+}
+
+.navbar-nav {}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 70%;
+    background: transparent;
+    z-index: 1;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navitem a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* ------------------------------------------------ Social and F.A. icons */
+
+.head-social {
+    margin-top: 80px;
+    display: inline-block;
+}
+
+.social-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+.social-item {
+    display: inline-block;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+.back-link,
+.social-links {
+    text-align: center;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #a1a1a1;
+    font-size: 1.3em;
+}
+
+.social-links li a i:hover {
+    color: #6a6a6a;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #a1a1a1;
+    font-size: 1.8em;
+    padding-bottom: 5px;
+}
+
+.back-link:hover {
+    color: #6a6a6a;
+}
+
+.back-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+/* ---------------------------------------------- Containers */
+
+.callout-container {
+    height: 90vh;
+
+    background: url("../images/website/header-5.jpg") no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    filter: brightness(110%);
+    /* credit: https://til.hashrocket.com/posts/4jhm8rrq7c-lighten-and-darken-with-css-brightness-filter */#
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* ---------------------------------------------- About & Portfolio */
+
+.img-container {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img-container img {
+    margin: 0 auto;
+}
+
+.about-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.85;
+}
+
+#portfolio-section,
+#about-me-section {
+    margin: 0 auto;
+
+}
+
+.about-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.contact-heading,
+.portfolio-heading {
+    font-family: "Caveat", sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.contact-item,
+.portfolio-item,
+.about-item {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+}
+
+#contact-section,
+#portfolio-section {
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.portfolio-item {
+    padding-bottom: 0;
+}
+
+/* ---------------------------------------------- Examples Gallery */
+
+.examples-heading {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.examples-nature {
+    padding-bottom: 30px;
+}
+
+.examples-architecture {
+    margin-bottom: 30px;
+}
+
+
+/* credit: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp  */
+
+.examples-architecture,
+.examples-nature {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column-examples {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column-examples img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .column-examples {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column-examples {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* ---------------------------------------------- Contact */
+
+#contact-section {
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-form-div {
+    margin: 0 auto;
+}
+
+#contact-form {
+    margin: 0 auto;
+}
+
+.contact-container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+    border-radius: 5px;
+    background-color: #e3e3e3;
+    padding: 20px;
+}
+
+.form-name,
+.form-email,
+.form-message {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #bababa;
+    border-radius: 5px;
+}
+
+#contact-section label {
+    padding: 15px 15px 15px 0;
+    display: inline-block;
+}
+
+.form-submit {
+    background-color: #9e9e9e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-submit:hover {
+    background-color: #878787;
+}
+
+
+/* ---------------------------------------------- Footer */
+
+#footer-section {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    font-size: 1.4em;
+}
+
+/* ----------------------------------------- Media Queries */
+
+@media screen and (min-height: 993px) {
+
+    .social-item {
+        margin-top: 30px !important;
+    }
+}
+
+@media(max-width: 992px) {
+
+    .nav-container {
+        margin-top: 50px;
+    }
+
+    .navbar .navitem a {
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+
+    .head-name {
+        padding-top: 120px;
+    }
+
+    .head-social {
+        margin-top: -70px;
+    }
+
+    .social-item {
+        margin-top: 100px;
+    }
+
+    .social-heading {
+        font-size: 0.8em;
+    }
+
+    .callout-container {
+        height: 80vh;
+    }
+
+    .contact-heading,
+    .portfolio-heading {
+        font-size: 2em;
+    }
+
+    .back-link {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .img-container {
+        display: none;
+    }
+
+    .about-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-p {
+        font-size: 0.8em;
+    }
+
+    .contact-label label {
+        font-size: 0.8em;
+    }
+
+    input.form-name,
+    input.form-email,
+    textarea.form-message,
+    input.form-submit {
+        font-size: 0.8em;
+    }
+
+    .back-link {
+        font-size: 1em;
+    }
+
+    .back-p {
+        font-size: 0.8em;
+    }
+
+}
+
+@media (min-width: 570px) and (max-width: 698px) {
+
+    .callout-container {
+        height: 90vh;
+    }
+
+    #nav {
+        width: 100%;
+
+        margin-left: 20%;
+
+    }
+
+    .navbar .navitem {}
+
+    .navbar .navitem a {
+        font-size: 0.9em;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 569px) {
+
+    .callout-container {
+        height: 60vh;
+    }
+
+    .jumbotron h1 {
+        font-size: 3em;
+    }
+
+    .jumbotron h5 {
+        font-size: 1em;
+    }
+
+    .head-name,
+    .head-social {
+        padding-right: 0;
+    }
+
+    .social-heading {
+        font-size: 0.6em;
+        margin-bottom: 5px;
+    }
+
+    .social-links li {
+        font-size: 0.8em;
+    }
+
+    .contact-heading,
+    .portfolio-heading {
+        font-size: 1.8em;
+    }
+}
