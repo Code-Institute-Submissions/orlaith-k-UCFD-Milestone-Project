@@ -462,6 +462,13 @@
     }
 }
 
+@media (min-width: 0px) and (max-width: 575px) {
+    #nav {
+        z-index: 100;
+        background-color: white;
+    }
+}
+
 @media (max-width: 569px) {
 
     .callout-container {
